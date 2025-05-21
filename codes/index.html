@@ -1,190 +1,196 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- first onwe refresh page every 10 seconds -->
-     	<meta http-equiv="refresh" content="10">
+    <!-- Refresh the page every 10 seconds -->
+    <meta http-equiv="refresh" content="10">
+
+    <!-- Character encoding -->
     <meta charset="utf-8">
+
+    <!-- Make website responsive on mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS for styling and UI components -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <title>Hello world!</title>
   </head>
+
   <body>
 
+    <!-- Search Form using GET method -->
     <form method="get">
-  <input type="text" name="search" placeholder="Search here...">
-  <input type="submit" value="Search">
-</form>
+      <input type="text" name="search" placeholder="Search here...">
+      <input type="submit" value="Search">
+    </form>
 
-<p>Search Result: <b>
-  <!-- Showing result using query string -->
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    document.write(params.get("search") || "Nothing searched yet");
-    console.log("fefeq")
-  </script>
-</b></p>
+    <!-- Display search result using JavaScript -->
+    <p>Search Result: <b>
+      <script>
+        const params = new URLSearchParams(window.location.search);
+        document.write(params.get("search") || "Nothing searched yet");
+      </script>
+    </b></p>
 
+    <!-- Email Links -->
+    <a href="mailto:vinslinpackia@gmail.com">Send Email</a><br>
+    <a href="mailto:someone@example.com?subject=Hello&body=How are you?">Email with Subject</a><br>
 
-    <a href="mailto:vinslinpackia@gmail.com">Send Email</a>
-<a href="mailto:someone@example.com?subject=Hello&body=How are you?">
-  Email with Subject
-</a>
+    <!-- Link to Google -->
+    <a href="https://www.google.com">Go to Google</a><br>
 
-<a href="https://www.google.com">Go to Google</a>
-
+    <!-- Price update using <del> and <ins> -->
     <p>The price was <del>₹500</del>.</p>
     <p>The price is <ins>₹450</ins>.</p>
-    <a href="https://www.google.com" target="_blank">Google (new tab)</a>
-<a href="dummy.pdf" download>Download PDF </a>
 
+    <!-- Link that opens in new tab -->
+    <a href="https://www.google.com" target="_blank">Google (new tab)</a><br>
+
+    <!-- Download link for a PDF file -->
+    <a href="dummy.pdf" download>Download PDF</a>
+
+    <!-- Strike-through using <s> -->
     <p>Only <s>10</s> 5 items left in stock!</p>
-     <p>This offer is <s>expired</s> now.</p>
-<p>I love <span style="color: red;">HTML</span> and <span style="color: blue;">CSS</span>.</p>
-<figure>
-    <figcaption>Peace</figcaption>
-<img src="images.jpg" alt="A beautiful sunset" width="600" height="700">
-<figcaption>Peace</figcaption>
-</figure>
+    <p>This offer is <s>expired</s> now.</p>
+
+    <!-- Colored text using <span> -->
+    <p>I love <span style="color: red;">HTML</span> and <span style="color: blue;">CSS</span>.</p>
+
+    <!-- Image with caption using <figure> and <figcaption> -->
+    <figure>
+      <figcaption>Peace</figcaption>
+      <img src="images.jpg" alt="A beautiful sunset" width="600" height="700">
+      <figcaption>Peace</figcaption>
+    </figure>
+
+    <!-- Heading and horizontal line -->
     <h1>Hello,<hr> world!</h1>
+
+    <!-- Line break using <br> -->
     <p>Hello<br>How are you?</p>
+
+    <!-- Horizontal rule -->
     <p>Introduction</p>
-<hr>
-<p><q>Next Topic <br>
-    efgggewwgew
-</p>
-   <p>
-      We are learning <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>.
-    </p>
+    <hr>
 
-    <div class="alert alert-primary" role="alert">
-  A simple primary alert—check it out!
-</div>
-<div class="alert alert-secondary" role="alert">
-  A simple secondary alert—check it out!
-</div>
-<div class="alert alert-success" role="alert">
-  A simple success alert—check it out!
-</div>
-<div class="alert alert-danger" role="alert" style="font-weight:bold; font-size:1.1em; background-color:#f8d7da; color:#721c24;"></div>
-  A simple danger alert—check it out!
-</div>
-<div class="alert alert-warning" role="alert">
-  A simple warning alert—check it out!
-</div>
-<div class="alert alert-info" role="alert">
-  A simple info alert—check it out!
-</div>
-<div class="alert alert-light" role="alert">
-  A simple light alert—check it out!
-</div>
-<div class="alert alert-dark" role="alert">
-  A simple dark alert—check it out!
-</div>
-<form action="/search" method="get">
-  <input type="text" name="query" placeholder="Search...">
-  <input type="submit" value="Search">
-</form>
+    <!-- Quotation -->
+    <p><q>Next Topic <br> efgggewwgew</q></p>
 
+    <!-- Abbreviations with tooltips -->
+    <p>We are learning <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
 
+    <!-- Bootstrap Alert Boxes -->
+    <div class="alert alert-primary" role="alert">A simple primary alert—check it out!</div>
+    <div class="alert alert-secondary" role="alert">A simple secondary alert—check it out!</div>
+    <div class="alert alert-success" role="alert">A simple success alert—check it out!</div>
+    <div class="alert alert-danger" role="alert">A simple danger alert—check it out!</div>
+    <div class="alert alert-warning" role="alert">A simple warning alert—check it out!</div>
+    <div class="alert alert-info" role="alert">A simple info alert—check it out!</div>
+    <div class="alert alert-light" role="alert">A simple light alert—check it out!</div>
+    <div class="alert alert-dark" role="alert">A simple dark alert—check it out!</div>
 
-<ol>
-  <li>Wake up</li>
-  <li>Brush your teeth</li>
-  <li>Study HTML</li>
-</ol>
+    <!-- Another Search Form (GET method) -->
+    <form action="/search" method="get">
+      <input type="text" name="query" placeholder="Search...">
+      <input type="submit" value="Search">
+    </form>
 
-<ul>
-  <li>Apples</li>
-  <li>Bananas</li>
-  <li>Cherries</li>
-</ul>
+    <!-- Ordered List -->
+    <ol>
+      <li>Wake up</li>
+      <li>Brush your teeth</li>
+      <li>Study HTML</li>
+    </ol>
 
-<dl>
-  <dt>HTML</dt>
-  <dd>HyperText Markup Language</dd>
+    <!-- Unordered List -->
+    <ul>
+      <li>Apples</li>
+      <li>Bananas</li>
+      <li>Cherries</li>
+    </ul>
 
-  <dt>CSS</dt>
-  <dd>Cascading Style Sheets</dd>
-</dl>
- <!-- table -->
-<table>
-  <tr>
-    <th>Heading 1</th>
-    <th>Heading 2</th>
-  </tr>
-  <tr>
-    <td>Row 1, Col 1</td>
-    <td>Row 1, Col 2</td>
-  </tr>
-</table>
+    <!-- Description List -->
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language</dd>
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+    </dl>
 
- <!-- form  -->
+    <!-- Table Example -->
+    <table border="1">
+      <tr>
+        <th>Heading 1</th>
+        <th>Heading 2</th>
+      </tr>
+      <tr>
+        <td>Row 1, Col 1</td>
+        <td>Row 1, Col 2</td>
+      </tr>
+    </table>
 
-<form action="/submit" method="post">
-  <label>Username:</label>
-  <input type="text" name="username"><br>
+    <!-- Registration Form (POST method) -->
+    <form action="/submit" method="post">
+      <label>Username:</label>
+      <input type="text" name="username"><br>
 
-  <label>Password:</label>
-  <input type="password" name="password"><br>
+      <label>Password:</label>
+      <input type="password" name="password"><br>
 
-  <label>Gender:</label><br>
-  <input type="radio" name="gender" value="male"> Male<br>
-  <input type="radio" name="gender" value="female"> Female<br>
+      <!-- Radio Buttons -->
+      <label>Gender:</label><br>
+      <input type="radio" name="gender" value="male"> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
 
-  <label>Hobbies:</label><br>
-  <input type="checkbox" name="hobby" value="reading"> Reading<br>
-  <input type="checkbox" name="hobby" value="traveling"> Traveling<br>
+      <!-- Checkboxes -->
+      <label>Hobbies:</label><br>
+      <input type="checkbox" name="hobby" value="reading"> Reading<br>
+      <input type="checkbox" name="hobby" value="traveling"> Traveling<br>
 
-  <label>Country:</label><br>
-  <select name="country">
-    <option value="in">India</option>
-    <option value="us">USA</option>
-  </select><br><br>
+      <!-- Dropdown -->
+      <label>Country:</label><br>
+      <select name="country">
+        <option value="in">India</option>
+        <option value="us">USA</option>
+      </select><br><br>
 
-  <input type="submit" value="Register">
-</form>
-  <form action="/login" method="post">
-    <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username" required><br><br>
+      <input type="submit" value="Register">
+    </form>
 
-    <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password" required><br><br>
+    <!-- Login Form -->
+    <form action="/login" method="post">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" required><br><br>
 
-    <input type="submit" value="Login">
-  </form>
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" required><br><br>
 
-   <h2>Upload a File</h2>
+      <input type="submit" value="Login">
+    </form>
 
-  <form action="/upload" method="post" enctype="multipart/form-data">
-    <label for="myfile">Choose a file:</label><br>
-    <input type="file" id="myfile" name="myfile"><br><br>
+    <!-- File Upload Form -->
+    <h2>Upload a File</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <label for="myfile">Choose a file:</label><br>
+      <input type="file" id="myfile" name="myfile"><br><br>
+      <input type="submit" value="Upload File">
+    </form>
 
-    <input type="submit" value="Upload File">
-  </form>
+    <!-- Audio Player -->
+    <h2>Play Audio</h2>
+    <audio controls>
+      <source src="your-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
 
+    <!-- Video Player -->
+    <h2>Play a Video</h2>
+    <video width="640" height="360" controls>
+      <source src="your-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
 
-  <h2>Play Audio</h2>
-
-  <audio controls>
-    <source src="your-audio.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-
-   <!-- play a video -->
-<h2>Play a Video</h2>
-
-  <video width="640" height="360" controls>
-    <source src="your-video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Bootstrap JS Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
