@@ -1,0 +1,80 @@
+/* Element selector: targets the whole <body> tag */
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Class selector: targets elements with class="login-box" */
+.login-box {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 300px;
+}
+
+/* Descendant selector: targets <h2> inside .login-box */
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 
+Descendant + Attribute selector: 
+targets <input type="text"> and <input type="password"> inside .login-box 
+*/
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 
+Descendant + Attribute selector: 
+targets <input type="submit"> inside .login-box 
+*/
+.login-box input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* 
+Pseudo-class selector: 
+targets <input type="submit"> inside .login-box when hovered 
+*/
+.login-box input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* 
+Descendant + Class selector: 
+targets element with class="signup" inside .login-box 
+*/
+.login-box .signup {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* 
+Descendant + Class + Element selector: 
+targets <a> tag inside element with class="signup", which is inside .login-box 
+*/
+.login-box .signup a {
+  color: #4CAF50;
+  text-decoration: none;
+}
