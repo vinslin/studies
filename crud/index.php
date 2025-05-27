@@ -8,9 +8,15 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="mb-4">CRUD APP</h1>
-        <h2>List of clients</h2>
-        <a class="btn btn-primary " href="create.php">New Client</a>
+        <h1  class="mb-4" style="margin-left: 240px ;  font-family: 'Georgia', serif;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  color:rgb(226, 113, 188);
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px #999;">CRUD APP</h1>
+        <h2 style="padding-left :250px">List of clients</h2>
+        <a class="btn btn-primary " style="font-weight:bold ;margin-top:20px; margin-bottom:20px;padding-left :20px;padding-right :20px" href="create.php">New Client</a>
         <table class="table table-striped table-bordered table-hover">
             <thead class="table-dark">
                 <tr>
